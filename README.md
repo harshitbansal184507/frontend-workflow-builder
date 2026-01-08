@@ -8,7 +8,7 @@
 
 > A powerful, visual no-code platform for building and executing AI-powered workflows with drag-and-drop simplicity.
 
-![Workflow Builder Demo](https://via.placeholder.com/1200x600/1a192b/ffffff?text=AI+Workflow+Builder+Demo)
+<img width="1909" height="868" alt="image" src="https://github.com/user-attachments/assets/48790f65-3863-43db-bed3-7382e2a05aaf" />
 
 ## ✨ Features
 
@@ -26,7 +26,7 @@
 
 ### ⚙️ Advanced Configuration
 - **Node Editor**: Comprehensive editor for customizing node properties
-  - System prompts and user instructions
+  - System prompts and user prompts
   - Model selection (GPT-4o, Claude, etc.)
   - Temperature controls for output randomness
   - Custom labels and metadata
@@ -58,15 +58,17 @@
 ## 📸 Screenshots
 
 ### Main Canvas
-![Canvas View](https://via.placeholder.com/800x450/1a192b/ffffff?text=Visual+Workflow+Canvas)
+<img width="957" height="429" alt="image" src="https://github.com/user-attachments/assets/ac6add0e-a861-466b-8e99-122219a8cb96" />
 *Drag-and-drop interface with real-time node connections*
 
 ### Node Configuration
-![Node Editor](https://via.placeholder.com/800x450/ffffff/1a192b?text=Node+Configuration+Panel)
+<img width="202" height="239" alt="image" src="https://github.com/user-attachments/assets/2bad8e66-e3cb-4be8-aecf-7408bfc1435b" />
+
 *Comprehensive node editor with AI model settings*
 
 ### Workflow Execution
-![Execution Panel](https://via.placeholder.com/800x450/f8f9fa/1a192b?text=Workflow+Execution+Results)
+<img width="176" height="194" alt="image" src="https://github.com/user-attachments/assets/0d46e0c1-bbe4-4041-b9aa-11b950112649" />
+
 *Real-time execution with JSON input/output*
 
 ## 🚀 Quick Start
@@ -75,14 +77,14 @@
 
 - **Node.js** 18.x or higher
 - **npm** or **yarn** package manager
-- **Backend API** (see [Backend Setup](#backend-setup))
+- **Backend API** (see https://github.com/harshitbansal184507/backend-workflow-builder )
 
 ### Installation
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/ai-workflow-builder.git
-cd ai-workflow-builder
+git clone (https://github.com/harshitbansal184507/frontend-workflow-builder.git)
+cd workflow-builder
 ```
 
 2. **Install dependencies**
@@ -118,10 +120,7 @@ http://localhost:5173
 
 The frontend requires a backend API to execute workflows. Set up the backend server:
 
-### Backend Requirements
-- FastAPI or Express.js server
-- AI model API access (OpenAI, Anthropic, etc.)
-- Workflow execution engine
+
 
 ### API Endpoints
 ```
@@ -139,14 +138,36 @@ POST /api/workflow/validate
 ### Example Backend Response
 ```json
 {
-  "status": "success",
-  "output": {
-    "message": "Workflow completed successfully",
-    "results": { ... }
+  "workflow": {
+    "nodes": [
+      {
+        "id": "string",
+        "type": "string",
+        "data": {
+          "additionalProp1": {}
+        },
+        "position": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "string",
+        "source": "string",
+        "target": "string",
+        "type": "default",
+        "data": {}
+      }
+    ]
   },
-  "executionTime": 1234,
-  "nodesExecuted": 5
+  "input": {
+    "additionalProp1": {}
+  }
 }
+
 ```
 
 ## 🏗️ Project Structure
@@ -221,11 +242,7 @@ Use `{{variable}}` syntax in prompts to inject input data:
 User Prompt: "Analyze this message: {{message}}"
 ```
 
-**Multi-Model Workflows**
-Chain different AI models for specialized tasks:
-```
-Input → GPT-4 (Classification) → Claude (Detailed Response) → Output
-```
+
 
 ## 🧪 Development
 
@@ -358,17 +375,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Vite](https://vitejs.dev/) - Next generation frontend tooling
 - OpenAI & Anthropic - AI model providers
 
-## 📬 Contact
-
-- **Project Link**: [https://github.com/yourusername/ai-workflow-builder](https://github.com/yourusername/ai-workflow-builder)
-- **Issues**: [https://github.com/yourusername/ai-workflow-builder/issues](https://github.com/yourusername/ai-workflow-builder/issues)
-- **Discussions**: [https://github.com/yourusername/ai-workflow-builder/discussions](https://github.com/yourusername/ai-workflow-builder/discussions)
-
 ## ⭐ Star History
 
 If you find this project useful, please consider giving it a star!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-workflow-builder&type=Date)](https://star-history.com/#yourusername/ai-workflow-builder&Date)
 
 ---
 
@@ -377,8 +387,8 @@ If you find this project useful, please consider giving it a star!
 </p>
 
 <p align="center">
-  <a href="https://github.com/yourusername/ai-workflow-builder">⭐ Star us on GitHub</a> •
+  <a href="[https://github.com/yourusername/ai-workflow-builder](https://github.com/harshitbansal184507/frontend-workflow-builder.git)">⭐ Star us on GitHub</a> •
   <a href="CONTRIBUTING.md">🤝 Contribute</a> •
-  <a href="https://github.com/yourusername/ai-workflow-builder/issues">🐛 Report Bug</a> •
-  <a href="https://github.com/yourusername/ai-workflow-builder/issues">💡 Request Feature</a>
+  <a href="https://github.com/harshitbansal184507/frontend-workflow-builder">🐛 Report Bug</a> •
+  <a href="https://github.com/harshitbansal184507/frontend-workflow-builder/issues">💡 Request Feature</a>
 </p>
